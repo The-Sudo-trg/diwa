@@ -4,9 +4,13 @@
 **Run target:** `http://127.0.0.1:8080`.
 **Run date:** 2026-09-21.
 
-## Execution status
+## Execution status — recheck 2026-09-21
 
-The local target was not running: connection to `127.0.0.1:8080` failed. The Python scripts also could not start because the environment does not have the `requests` package installed. Therefore no dynamic finding is marked confirmed by runtime testing. Classifications below distinguish **code-supported**, **not reproducible/likely false positive**, and **blocked**.
+A fresh local-only recheck was attempted before classifying the findings. The target at `http://127.0.0.1:8080` is unreachable, Docker is not installed in this execution environment, and Python `requests` is unavailable. Consequently, no HTTP proof-of-concept could be executed in this run. The results below preserve the static classifications and explicitly mark every runtime check as **blocked**, rather than labeling code-only evidence as dynamically confirmed.
+
+**Dynamic result:** 0 confirmed at runtime · 12 blocked pending local execution · 9 not applicable/false positive by repository mismatch.
+
+**Static result:** 12 code-supported findings · 9 false positives/not applicable. Static review is not a substitute for dynamic confirmation.
 
 ## Final finding list
 
